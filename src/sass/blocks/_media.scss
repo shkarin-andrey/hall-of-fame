@@ -1,0 +1,79 @@
+@media screen and (max-width: 860px) {
+    .container {
+        box-sizing: border-box;
+    }
+    
+    .descr {
+        width: 100%;
+    }
+    
+    .troll {
+        display: none;
+    }
+
+    .winner {
+        width: 100%;
+        flex-direction: column;
+        &__card {
+            &:first-child {
+                order: 2;
+                margin-top: 20px;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+            &:last-child {
+                order: 3;
+                margin-top: 20px;
+            }
+        }
+    }
+    .participant {
+        &__img {
+            margin: 0 auto;
+            &:last-child {
+                display: none;
+            }
+        }
+        table {
+            width: 410px;
+            margin: 0 auto;
+            th, td {
+                // padding: 0!important;
+                text-align: center;
+            }
+        }
+    }   
+}
+
+
+@media screen and (max-width: 440px) {
+    .participant {
+        &__img {
+            display: none;
+        }
+        table {
+            width: 100%;
+            margin-top: 40px;
+            thead {
+                th:nth-child(3),
+                th:nth-child(2),
+                th:nth-child(4) {
+                    text-align: center;
+                }
+            }
+            th, td {
+                text-align: center;
+                padding: 0 !important;
+            }
+            td:last-child {
+                width: 15%;
+            }
+            td:nth-child(3),
+            td:nth-child(4) {
+                text-align: center;
+            } 
+        }
+    }
+    
+}

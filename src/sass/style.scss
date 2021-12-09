@@ -1,0 +1,72 @@
+@import 'libs/normalize';
+@import url('https://allfont.ru/allfont.css?fonts=badaboom-bb');
+@import 'base/fonts';
+@import 'base/variables';
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    color: $text-white;
+}
+
+body {
+    position: relative;
+    background-color: $bg;
+    font-size: 16px;
+    font-weight: 400;
+    color: $text-white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.container {
+    max-width: 830px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 70px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-color;
+    font-family: 'BadaBoom-BB';
+    font-weight: 400;
+    padding-top: 125px;
+}
+.subtitle {
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $main-color;
+    font-family: 'BadaBoom-BB';
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.descr {
+    width: 570px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 12px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+@import 'blocks/bg';
+@import 'blocks/btn';
+@import 'blocks/winner';
+@import 'blocks/participant';
+
+@import 'blocks/media';

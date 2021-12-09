@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'BadaBoom-BB';
+    font-display: swap;
+    src: url('../fonts/BabaBoom/BadaBoom-BB.ttf.woff') format('woff'),
+        url('../fonts/BabaBoom/BadaBoom-BB.ttf.svg#BadaBoom-BB') format('svg'),
+        url('../fonts/BabaBoom/BadaBoom-BB.ttf.eot'),
+        url('../fonts/BabaBoom/BadaBoom-BB.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: url('../fonts/MerriweatherSans/merriweathersansregular.woff2') format('woff2'),
+        url('../fonts/MerriweatherSans/merriweathersansregular.woff') format('woff'), 
+        url('..fonts//MerriweatherSans/merriweathersansregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: url('../fonts/MerriweatherSans/merriweathersansbold.woff2') format('woff2'), 
+        url('../fonts/MerriweatherSans/merriweathersansbold.woff') format('woff'), 
+        url('../fonts/MerriweatherSans/merriweathersansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+

@@ -1,0 +1,80 @@
+.btn {
+    position: relative;
+    display: block;
+    margin: 15px auto 0;
+    width: 244px;
+    height: 50px;
+    background: $btn-1;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 700;
+    border-radius: 5px 5px 10px 10px;
+    border: none;
+    outline: none;
+    color: $text-white;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background: darken($btn-1, 10%);
+        box-shadow: 0 0 15px 2px $btn-1;
+        &::after {
+            background: darken($btn-1, 10%);
+            box-shadow: -5px 0 8px $btn-1;
+        }
+        &::before {
+            background: darken($btn-1, 10%);
+            box-shadow: 5px 0 8px $btn-1;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        bottom: 0;
+        display: block;
+        height: 100%;
+        background: $btn-1;
+        width: 20px;
+        transform: skew(10deg);
+        border-radius: 50px 0 0 35px;
+        transition: all .3s;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        right: -10px;
+        bottom: 0;
+        display: block;
+        height: 100%;
+        background: $btn-1;
+        width: 20px;
+        transform: skew(-10deg);
+        border-radius: 0 50px 35px 0;
+        transition: all .3s;
+    }
+    &__results {
+        background: #fff;
+        color: $text-black;
+        margin-top: 27px;
+        &:hover {
+            background: darken(#fff, 10%);
+            box-shadow: 0 0 15px 2px #fff;
+
+            &::after {
+                background: darken(#fff, 10%);
+                box-shadow: -5px 0 8px #fff;
+            }
+
+            &::before {
+                background: darken(#fff, 10%);
+                box-shadow: 5px 0 8px #fff;
+            }
+        }
+        &::before {
+            background: #fff;
+        }
+        &::after {
+            background: #fff;
+        }
+    }
+}
